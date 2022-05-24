@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name = 'viewport' content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href='accepts/css/style.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&family=Neonderthaw&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lato:ital,wght@1,900&family=Neonderthaw&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lobster&display=swap" rel="stylesheet">
+    <title>Ferrari</title>
+</head>
+<body>
+
+    <header class='header'>
+        <div class='container'>
+            <div class="header_inner">
+                <a class='nav_link' href="index.html">Scudeia Ferrari</a>
+                <div class="date_Time">
+                    <div id='time'></div>
+                    <div id='dateTime'></div>
+                </div>
+                <script>
+                    setInterval(()=> {
+                        const time = document.querySelector('#time');
+                        const dateTime = document.querySelector('#dateTime');
+                        let date = new Date();
+                        let hours = date.getHours();
+                        let minutes = date.getMinutes();
+                        let seconds = date.getSeconds();
+                        let day = date.getDate();
+                        let month = date.getMonth();
+                        let year = date.getFullYear();
+                        if(hours < 10) {
+                            hours = '0' + hours;
+                        }
+                        if(minutes < 10) {
+                            minutes = '0' + minutes;
+                        }
+                        if(seconds < 10) {
+                            seconds = '0' + seconds;
+                        }
+                        if(day < 10) {
+                            day = '0' + day;
+                        }
+                        let mont = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+                        
+                        time.textContent = hours + ':' + minutes + ':' + seconds;
+                        dateTime.textContent =  day + ' ' + mont[month] + ' ' + year;
+                    });
+                </script>
+                <nav class='nav'>
+                    <a class='nav_link' href="./Enzo.html">История</a>
+                    <a class='nav_link' href="#statistic">Результаты</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+<div class='intro'>
+    <div class='container'>
+        <div class = 'intro_inner'>
+            <h2 class='intro_uptitle'>Скудерия Феррари</h2>
+            <h1 class='intro_title'>Скудерия Феррари (итал. Scuderia Ferrari) — итальянская автогоночная команда, представляющая собой подразделение автомобильной компании Феррари (итал. Gestione Sportiva), занимающееся гонками. Хотя это подразделение продолжает заниматься гоночной деятельностью многочисленных клиентов Феррари и частных команд, его основные усилия и финансы сосредоточены на команде Формулы-1, Scuderia Ferrari. Команда принимает участие в гонках Формулы-1 с 1950 года по сей день и является самой старой и успешной командой в чемпионате. Многочисленных итальянских болельщиков команды часто называют «тифози» (итал. tifosi). Scuderia Ferrari переводится с итальянского как «Конюшня Феррари»</h1>
+
+            <a class='btn' href="#">Forza ferrari!</a>
+        </div>
+    </div>
+
+    <div class="slider">
+        <div class="container">
+            <div class="slider_inner">
+                <a class="slider_item" href="#section">
+                    <span class='slider_num'>1952</span>
+                    <span>Ascari</span>
+                </a>
+                <a class="slider_item" href="#section3">
+                    <span class='slider_num'>1975</span>
+                    <span>Lauda</span>
+                </a>
+                <a class="slider_item" href="#section4">
+                    <span class='slider_num'>2000</span>
+                    <span>Schumacher</span>
+                </a>
+                <a class="slider_item" href="#section5">
+                    <span class='slider_num'>2007</span>
+                    <span>Raikkonen</span>
+                </a>
+                <a class="slider_item passive">
+                    <span class='slider_num'>2022</span>
+                    <span>Leclerc</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id='statistic' class='statistic'>
+    <div class="container">
+        <div class="stat">
+            <div class="stat_item">
+                <div class="stat_num">1030</div>
+                <div class="stat_text">cтартов</div>
+            </div>
+            <div class="stat_item">    
+                <div class="stat_num">238</div>
+                <div class="stat_text">побед</div>
+            </div>
+            <div class="stat_item">    
+                <div class="stat_num">230</div>
+                <div class="stat_text">поулов</div>
+            </div>
+            <div class="stat_item">    
+                <div class="stat_num">254</div>
+                <div class="stat_text">быстрых круга</div>
+            </div>            
+            <div class="stat_item">    
+                <div class="stat_num">778</div>
+                <div class="stat_text">подиумов</div>
+            </div>
+            <div class="stat_item">    
+                <div class="stat_num">16</div>
+                <div class="stat_text">кубков конструкторов</div>
+            </div>
+            <div class="stat_item">    
+                <div class="stat_num">15</div>
+                <div class="stat_text">чемпионатов мира</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section id="section" class='section'>
+    <div class="container">
+        <div class="section_header">
+            <h2 class='section_title'>Альбе́рто Аска́ри</h2>
+            <h3 class='section_suptitle'>Чемпион Формулы 1 1952-1953 гг.</h3>
+            <div class='section_text'>
+                <p>Альбе́рто Аска́ри (13 июля 1918, Милан — 26 мая 1955 года, Монца) — потомственный итальянский автогонщик, чемпион Формулы-1 1952 и 1953 года. Является вторым и до настоящего времени последним итальянцем, сумевшим завоевать этот титул. Аскари стал один из первых боевых пилотов Скудерии Феррари в чемпионате формулы 1, а также первым чемпионом в составе данной команды. Он участвовал всего в 33-х гонках, но успел установить множество рекордов, некоторые из них не побиты до сих пор. После нескольких крайне успешных лет перешёл в команду «Лянча», где занимался доводкой перспективного автомобиля, но через полтора года работы погиб при неясных обстоятельствах, тестируя спортивный автомобиль на трассе Монца.</p>
+            </div>
+        </div>
+
+        <div class="about">
+            <div class="about_item">
+                <div class="about_image">
+                    <img src="accepts/images/Ascari/Ascari 3.jpg" alt="Paint" class="responsive">
+                </div>
+                <div class='about_text'>Альберто Аскари, Хуан Мануэль Фанхио и Джузеппе Фарина</div>
+            </div>
+            <div class="about_item">
+                <div class="about_image">
+                    <img src="accepts/images/Ascari/Ascari 2.jpg" alt="Paint" class="responsive">
+                </div>
+                <div class='about_text'>Альберто Аскари за рулем Ferrari 500</div>
+            </div>
+            <div class="about_item">
+                <div class="about_image">
+                    <img src="accepts/images/Ascari/Ascari 1.jpg" alt="Paint" class="responsive">
+                </div>
+                <div class='about_text'>Альберто Аскари за рулем Ferrari Tipo 125</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class='section2'>
+    <div class="container">
+        <div class="section_header">
+            <h2 class='section_title'>Чемпионы 50-70-х</h2>
+        </div>
+
+        <div class="champ">
+            <div class="champ_item">
+                <div class="champ_body">
+                    <div class='champ_front'>
+                        <img src="./accepts/images/Champ/Fangio.jpg" alt="">
+                    </div>
+                    <div class="champ_about">Хуан Мануэль Фанхио</div>
+                </div>
+                <div class='champ_text'>1956 год</div>
+            </div>
+            <div class="champ_item">
+                <div class="champ_body">
+                    <div class='champ_front'>
+                        <img src="./accepts/images/Champ/Hotorn.jpg" alt="">
+                    </div>
+                    <div class="champ_about">Майк Хоторн</div>
+                </div>
+                <div class='champ_text'>1958 год</div>
+            </div>
+            <div class="champ_item">
+                <div class="champ_body">
+                    <div class='champ_front'>
+                        <img src="./accepts/images/Champ/Hill.jpg" alt="">
+                    </div>
+                    <div class="champ_about">Фил Хилл</div>
+                </div>
+                <div class='champ_text'>1961 год</div>
+            </div>
+        </div>
+
+    <hr>
+
+        <div class="champ">
+            <div class="champ_item">
+                <div class="champ_body">
+                    <div class='champ_front'>
+                        <img src="./accepts/images/Champ/Sertis.jpg" alt="">
+                    </div>
+                    <div class="champ_about">Джон Сертис</div>
+                </div>
+                <div class='champ_text'>1964 год</div>
+            </div>
+            <div class="champ_item">
+                <div class="champ_body">
+                    <div class='champ_front'>
+                        <img src="./accepts/images/Champ/Shekter.jpg" alt="">
+                    </div>
+                    <div class="champ_about">Джоди Шектер</div>
+                </div>
+                <div class='champ_text'>1979 год</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="section3" class="section3">
+    <div class="container">
+        <div class="section_header">
+            <h2 class='section_title'>Ники Лауда</h2>
+            <h3 class='section_suptitle'>Чемпион Формулы 1 1975, 1977, 1984 гг.</h3>
+            <div class='section_text'>
+                <p>Лауда начал свою карьеру в "Формуле-1" в 1971 году. Его родители были состоятельными людьми и хотели, чтобы он стал предпринимателем и отказывались его спонсировать. Чтобы купить место в команде "Марч", он взял кредит под залог своей страховки. Через два года ему понадобился еще один кредит, чтобы купить место в команде БРМ. Этот шаг определил дальнейший ход его карьеры. Соратник по БРМ Клей Регаццони был впечатлен решительностью Лауды. В 1974 году Регаццони перешел в "Феррари" и посоветовал владельцу команды присмотреться к австрийцу. В том же году Лауда подписал с "Феррари" контракт. В 1973 году дела у легендарной итальянской команды обстояли не очень хорошо, но ее ждал рывок к успеху под началом нового менеджера Луки де Монтедземоло. В 1974 году Лауда почти получил титул чемпиона "Формулы-1", из-за неопытности уступив Эммерсону Фиттипальди из "Макларена", но этот проигрыш предвещал победу - в 1975 году Лауда на новом болиде "Феррари 312-Т" выиграл четыре гонки подряд и добился чемпионского титула. В 1976 году гонщику не хватило до звания чемпиона нескольких очков, а в 1977 он завоевал его снова, несмотря на то, что его отношения с Энцо Феррари испортились после Нюрбургринга. В июле 2018 года у Лауды диагностировали запущенную инфекцию легких. Ему пересадили оба легких. В ноябре он и его команда разместили в сети видеообращение. Лауда говорил, что скоро вернется к работе. Но в январе 2019 у гонщика обнаружили пневмонию, после чего Лауду госпитализировали в Вене. 20 мая 2019 года Ники Лауда скончался из-за осложнений после болезни.</p>
+            </div>
+        </div>
+
+        <div class="lauda_img">
+            <img src="./accepts/images/Lauda/lauda1.jpg" alt="">
+            <img src="./accepts/images/Lauda/lauda5.jpg" alt="">
+            <img src="./accepts/images/Lauda/lauda6.jpg" alt="">
+        </div>
+    </div>
+</section>
+
+<section id="section4" class="section4">
+    <div class="container">
+        <div class="section_header">
+            <h2 class='section_title'>Михаэль Шумахер</h2>
+            <h3 class='section_suptitle'>Чемпион Формулы 1 1994-1995 гг., 2000-2004 гг.</h3>
+            <div class='section_text'>
+                <p>Михаэ́ль Шума́хер (03/01/1969) — немецкий автогонщик «Формулы-1», семикратный чемпион мира. Обладатель многочисленных рекордов чемпионата мира Формулы-1: по числу побед за один сезон (13), быстрых кругов (77), а также чемпионских титулов подряд (5). Уже после завершения карьеры, в конце 2013 года, в результате несчастного случая получил тяжёлую травму головы.</p>
+                <p><img src="./accepts/images/Shumi/Shumi4.jpg" alt="" align='left' vspace='5' hspace='5'>В 1995 году Шумахер подписал контракт с «Феррари». К этому времени команда уже 17 лет не выигрывала чемпионат в личном зачёте. У машин «Феррари» при этом была репутация не слишком быстрых и очень ненадёжных, а за титул гонщики в последний раз боролись в 1990 году, когда за команду выступал Ален Прост. С тех пор гонщики «Скудерии» выигрывали не больше одной гонки за сезон. Тем не менее, уже в первый год выступлений, несмотря на многочисленные сходы по техническим причинам, Шумахер принёс итальянской команде три победы (Гран-при Испании, Бельгии и Италии) и третье место в личном зачёте, позади двух гонщиков «Уильямс».</p>
+                <p>В 1997 году Шумахер уже был очень близок к завоеванию титула, перед последней гонкой в Хересе лидировал в чемпионате, но спровоцировал столкновение с главным претендентом на титул Жаком Вильнёвом, был дисквалифицирован и исключён из протокола всего чемпионата.</p>
+                <p><img src="./accepts/images/Shumi/shumi1.jpg" alt="" align='right' vspace='5' hspace='5'>В 1998 Шумахер стал единственным гонщиком, который смог навязать борьбу доминировавшим на трассе машинам «Макларен», однако по итогам сезона остался вторым, уступив в последнем Гран-при Мике Хаккинену.</p>
+                <p>В 1999 году авария на Гран-при Великобритании, в которой Шумахер сломал ногу в результате атаки на напарника по команде Эдди Ирвайна, помешала ему стать чемпионом мира в третий раз. После аварии он был вынужден пропустить шесть гонок. Но вернувшись в конце сезона, на Гран-при Малайзии и Японии, помог команде заполучить Кубок конструкторов, впервые с 1983 года.</p>
+                <p>В 2000 году на Гран-при Японии Шумахер завоевал свой третий чемпионский титул после 21 года ожидания для «Феррари». Он выиграл 9 гонок из 17-и, став чемпионом за один Гран-при до окончания сезона.</p>
+                <p>В 2001 году Шумахер выиграл четвёртый титул и побил рекорд Алена Проста по количеству выигранных Гран-при. В 2002 году Шумахер доминировал на протяжении всего чемпионата, выиграв 11 из 17 Гран-при, закончив все гонки сезона на подиуме и завоевал свой пятый титул чемпиона, сравнявшись с рекордом Хуана Мануэля Фанхио. В 2003 году Шумахер завоевал шестой титул. Выиграв 13 Гран-при из 18 2004 года, он досрочно стал чемпионом мира в седьмой раз, что стало ещё одним рекордом «Формулы-1».</p>
+            </div>
+        </div>
+
+        <div class="lauda_img">
+            <img src="./accepts/images/Shumi/Shumi5.jpg" alt="">
+            <img src="./accepts/images/Shumi/Shumi2.jpg" alt="">
+        </div>
+    </div>
+</section>
+
+<section id="section5" class="section5">
+    <div class="container">
+        <div class="section_header">
+            <h2 class='section_title'>Кими Райкконен</h2>
+            <h3 class='section_suptitle'>Чемпион Формулы 1 2007 г.</h3>
+            <div class='section_text'>
+                <p>Ки́ми-Ма́тиас Ра́йкконен финский автогонщик, чемпион мира «Формулы-1» в 2007 году, двукратный вице-чемпион (2003, 2005) и трёхкратный бронзовый призёр (2008, 2012, 2018), лидер по количеству проведённых Гран-при «Формулы-1».</p>
+                <p><img src="./accepts/images/Kimi/Kimi1.jpg" alt="" align='left' vspace='5' hspace='5'>После Гран-при Италии 2006 года команда «Феррари» объявила, что Райкконен подписал с ней трёхлетний контракт на 2007—2009 годы. Сам Райкконен сказал, что очень доволен своим переходом, но желает команде «Макларен» дальнейшего процветания. Партнёром Райкконена стал Фелипе Масса, выступающий за «Феррари» с 2006 года. По неподтверждённой информации, после ухода Михаэля Шумахера именно Райкконен стал самым высокооплачиваемым гонщиком Формулы-1 — ходили слухи, что его зарплата в «Феррари» составила около 51 миллиона долларов в год.</p>
+                <p>По окончании сезона 2009 года Райкконен вёл переговоры с командой «Макларен», но в итоге объявил, что в 2010 году не будет выступать в «Формуле-1».</p>
+                <p><img src="./accepts/images/Kimi/Kimi2.jpg" alt="" align='right' vspace='5' hspace='5'>В 2012 году Райкконен вернулся в Формулу 1 в составе команды Lotus после выступлений в таких гоночных сериях, как WRC и Nascar.</p>
+                <p>В 2014 году Райкконен вернулся в Феррари, однако за последующие 5 сезонов подняться выше третьего места в чемпионате ему так и не удалось. На данный момент Кими Райкконен остается последним пилотом, принесшим Феррари чемпионский титул.</p>
+            </div>
+        </div>
+        <div class="lauda_img">
+            <img src="./accepts/images/Kimi/Kimi3.jpg" alt="">
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

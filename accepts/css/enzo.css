@@ -1,0 +1,171 @@
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.5;
+    font-size: 20px;
+    color:#ffe500;
+    border: none;
+
+    background: url(../images/enzo.jpg) no-repeat center top fixed;
+    background-size: cover;
+}
+
+.contain {
+    max-width: 1230px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Header */
+
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+    width:100%;
+    padding-top: 10px;
+    position:relative;
+    top:0;
+    left:0;
+    right:0;
+    z-index:1000;
+}
+
+/*date_Time*/
+
+.date_Time {
+    color:#ffe500;
+    text-align:center;
+    font-size: 24px;
+    font-weight: 500;
+    text-shadow: 1px 1px 1px #000000;
+    text-transform: uppercase;
+}
+
+
+/* nav */
+
+.nav {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav_link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    position: relative;
+    
+    color:#ffe500;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #000000;
+
+    transition: color .1s linear;
+}
+
+.nav_link:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    
+    background-color: darkred;
+    opacity: 0;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    transition: opacity .1s linear;
+}
+
+.nav_link:hover {
+    color:darkred;
+}
+
+.nav_link:hover:after {
+    opacity: 1;
+}
+
+
+
+.history {
+    text-align: center;
+    padding: 40px;
+
+    font-size: 40px;
+    font-family:'Lobster', cursive;
+    text-shadow: 2px 2px 2px black;
+}
+
+
+.item {
+    padding-left: 1%;
+    width:15%;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    position: absolute;
+}
+
+/*cont-triggers_item start*/
+
+.cont-triggers_item {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    color:#ffe500;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #000000;
+
+    transition: color .1s linear;
+}
+.cont-triggers_item:after {
+    background-color: darkred;
+    opacity: 0;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    transition: opacity .1s linear;
+}
+
+.cont-triggers_item:hover {
+    color:darkred;
+}
+
+.cont-triggers_item:hover:after {
+    opacity: 1;
+}
+
+/*cont-triggers_item ens*/
+
+.content {
+    position: relative;
+    left: 17%;
+    width: 80%;
+    height: 350px;
+    overflow-y: auto;
+    padding-right: 1%;
+
+    text-align: justify;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.content-content_item {
+    display: none;
+}
+
+.content-content_item--active {
+    display: block;
+}
